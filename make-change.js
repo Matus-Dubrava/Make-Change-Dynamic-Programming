@@ -5,6 +5,7 @@
 //   - create a function that finds all the possible solutions and stores them in a cache
 //   - memoize that function
 //   - extract the best option from the cache
+//   - (note) memoization cache and cache that stores the possible results is not the same here
 
 // helper function that generates all the possible solutions
 // meaning, all the possible ways in which we can pay the provided amount
@@ -57,7 +58,7 @@ const makeChange = (toPay, bills) => {
   return resValues;
 }
 
-const bills = [10, 7, 11, 3];
-const toPay = 16;
+const bills = [10, 7, 11, 3, 1];
+const toPay = 14;
 
 console.log(makeChange(toPay, bills));
